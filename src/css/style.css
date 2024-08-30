@@ -1,0 +1,358 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container_menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #212121;
+}
+
+.menu_name {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0;
+  margin-left: 20px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 0 0;
+  margin-top: 8px;
+  list-style-type: none;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.menu .menu_link {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.menu .menu_item {
+  padding-right: 45px;
+}
+
+/* .promo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.promo_photo {
+  position: relative;
+  margin-left: 808px;
+}
+
+.img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.promo_head {
+  top: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo_us {
+  display: flex;
+
+  text-transform: uppercase;
+  font-size: 37px;
+  line-height: 80px;
+  margin-top: 220px;
+  margin-left: 15px;
+  z-index: 1;
+  letter-spacing: 1px;
+}
+
+.promo_about {
+  width: 42%;
+  margin-left: 15px;
+  line-height: 35px;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.reason-row {
+  flex-direction: column;
+}
+
+.about_masjid {
+  display: flex;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.about_desc {
+  /* margin-left: 70px; */
+  margin-top: 40px;
+  width: 568px;
+  text-align: center;
+}
+
+.about_us {
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.about_pres {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.about_img {
+  width: 100%;
+  display: block;
+}
+
+.help_me {
+  text-align: center;
+  line-height: 25px;
+}
+
+.help_us {
+  margin-top: 15px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.ayat {
+  font-weight: 550;
+  margin-top: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.hadith-carousel {
+  padding: 81px 0;
+  background-color: whitesmoke;
+}
+
+.sadaqa {
+  text-align: center;
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 50px;
+  margin-top: -60px;
+}
+
+.hadith {
+  position: relative;
+  width: 750px;
+  margin: 0 auto;
+  transition: 0.8s;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.hadith-carousel .slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -110px;
+  border: none;
+  background-color: whitesmoke;
+  opacity: 0.7;
+}
+.slick-prev img {
+  width: 51px;
+  height: 41px;
+  border: none;
+}
+
+.hadith-carousel .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -110px;
+  left: auto;
+  border: none;
+  background-color: whitesmoke;
+  opacity: 0.7;
+}
+.slick-next img {
+  width: 51px;
+  height: 41px;
+  border: none;
+}
+
+.pays {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pay_img {
+  display: block;
+}
+
+.pay_qr {
+  object-fit: contain;
+  margin-left: 135px;
+  margin-top: 20px;
+}
+
+.pay_prikaz {
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 67px;
+}
+
+.end_about {
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.end_desc {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-top: 40px;
+}
+
+.end_pres {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1200px) {
+  .menu_name {
+    font-size: 21px;
+  }
+
+  .promo_us {
+    margin-top: 122px;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .about_img {
+    width: 100%;
+  }
+
+  .pay_qr {
+    width: 100%;
+    margin-left: 0;
+  }
+  .pay_prikaz {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 15px 0 0 0;
+  }
+
+  .img {
+    height: 250px;
+  }
+  .promo_head {
+    width: 100%;
+  }
+  .promo_us {
+    font-size: 25px;
+    margin-top: 65px;
+  }
+
+  .promo_about {
+    width: 50%;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  .about_img {
+    width: 100%;
+  }
+  .help_us {
+    font-size: 35px;
+  }
+  .ayat {
+    font-size: 15px;
+  }
+
+  .hadith {
+    font-size: 23px;
+  }
+
+  .sadaqa {
+    font-size: 35px;
+  }
+
+  .hadith-carousel .slick-prev {
+    left: -95px;
+  }
+
+  .hadith-carousel .slick-next {
+    right: -95px;
+  }
+
+  .slick-prev img {
+    width: 45px;
+    height: 35px;
+  }
+
+  .slick-next img {
+    width: 45px;
+    height: 35px;
+  }
+  .pays {
+    font-size: 45px;
+  }
+
+  .pay_qr {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .pay_prikaz {
+    width: 100%;
+    margin-left: 0;
+  }
+  .end_desc {
+    font-size: 35px;
+  }
+
+  .end_pres {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .img {
+  }
+}
